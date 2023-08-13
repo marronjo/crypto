@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 
 @Service
-public class ProviderService {
+public class OrderProviderService {
     private final HashMap<String, OrderProvider> providerMap = new HashMap<>();
 
-    public ProviderService(){
+    public OrderProviderService(){
         providerMap.put("coinbase", new CoinbaseService());
         providerMap.put("binance", new BinanceService());
     }
